@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+            background: rgb(16, 130, 79);
+            border-radius: 30px;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .material-symbols-outlined {
+            color: white;
+        }
+        hr {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Exemplo de matéria em um Blog</h1>
+        <hr>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#internet">Surgimento da internet</a></li>
+            <li><a href="#fhtml">Como funciona o HTML</a></li>
+            <li><a href="#tags">O que são Tags</a></li>
+        </ul>
+        <hr>
+        <h1 id="internet">Surgimento da internet</h1>
+        <p>A <i>internet</i> surgiu em 1969, mas não da forma como conhecemos hoje. Seu objetivo era completamente diferente: a ideia era proteger a comunicação dos Estados Unidos nas guerras. Vale lembrar ainda que esse período foi marcado pela Guerra Fria, um conflito político e ideológico entre o País da América do Norte e a antiga União Soviética <small>(parte do que deu origem à Rússia de hoje)</small>.</p>
+
+        <p>A novidade descentralizaria as informações do Pentágono para evitar que possíveis ataques causassem perda de documentos importantes. Foi aí que foi criada a <mark>Arpanet</mark>, rede de conexão da DARPA, Agência de Projetos de Pesquisa Avançada dos Estados Unidos. E esse é considerado o início da <i>internet</i>. Nessa época, as comunicações eram divididas em <u>pequenos pacotes com trechos dos dados</u>, os endereços dos destinatários e informações que permitissem a remontagem da mensagem original.</p>
+
+        <p>A Arpanet ganhou destaque no mundo acadêmico e no científico e, por isso, o protocolo para se comunicar com outras máquinas ou redes começou a ficar insuficiente. Então, foi desenvolvido o protocolo <sup>TCP/IP</sup>, em 1974, que respondia a um ambiente de rede de arquitetura aberta. Foi nessa época também que o nome “internet” começou a ser utilizado. Em 1985, já era a principal rede de comunicação com alcance global e, em 1987, a internet teve seu uso comercial liberado nos <del>Estados Unidos</del>. Vale contextualizar também que a popularização dos <sub>PCs</sub> havia começado anos antes, em 1981, pela IBM.</p>
+
+        <p>Com esse rápido desenvolvimento, serviços de correio eletrônico e provedores de internet com o método antigo de dial-up (que utilizava a linha do telefone fixo) começaram a surgir. Nessa grande linha do tempo, também temos que destacar o trabalho de Tim Berners-Lee, que, em 1989, criou a linguagem HTML, e cuja equipe criou o primeiro cliente web “WorldWideWeb” (www), usado até hoje.</p>
+
+        <h1 id="fhtml">Como funciona o HTML</h1>
+        <p>A Linguagem de Marcação de Hipertexto (<abbr title="Linguagem de Marcação de Hipertexto">HTML</abbr>) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.</p>
+        <p>O HTML não é considerado uma linguagem de programação, já que ele não pode criar funcionalidades dinâmicas. Ao invés disso, com o HTML, os usuários podem criar e estruturar seções, parágrafos e links usando elementos, tags e atributos.</p>
+
+        <h1 id="tags">O que são Tags</h1>
+        <p><blockquote>As tags são formadas por uma estrutura própria.</blockquote> Iniciam com o sinal “menor que”, em seguida vem o nome daquele elemento e por fim, o sinal “maior que”. Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo que no caso das tags de auto fechamento, não há necessidade da presença desse caractere.</p>
+        <p>As tags podem ser categorizadas inicialmente em dois tipos, em “nível de bloco” (block-level) e “em linha” (inline). Um elemento em nível de bloco ocupa toda a largura de seu elemento pai, que também chamamos de elemento container, criando assim um “bloco”. Já os elementos inline, geralmente usamos para demarcação de conteúdos de texto.</p>
+        <a href="indexHtml.html"><span class="material-symbols-outlined">
+            keyboard_backspace
+            </span></a>
+    </div>
+</body>
+</html>
