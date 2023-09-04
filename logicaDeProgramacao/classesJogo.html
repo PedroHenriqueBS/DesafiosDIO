@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+            background: rgb(16, 130, 79);
+            border-radius: 30px;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: none;
+            -webkit-box-shadow: inset -4px -3px 7px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: inset -4px -3px 7px -1px rgba(0,0,0,0.75);
+            box-shadow: inset -4px -3px 7px -1px rgba(0,0,0,0.75);
+            transition: 0.2s all;
+        }
+
+        button:active {
+            transform: scale(0.98)
+        }
+
+        h2 {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 250px;
+        }
+        
+        input {
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            margin: 3px;
+        }
+
+        span {
+            width: 200px;
+            padding-bottom: 20px;
+        }
+
+        .material-symbols-outlined {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Escrevendo as Classes de Um Jogo (console.log)</h2>
+        <span id="msg"></span>
+        <a href="indexProg.html"><span class="material-symbols-outlined">
+            keyboard_backspace
+            </span></a>
+    </div>
+
+    <script>
+        let msg = document.getElementById('msg');
+   
+        class hero {
+            constructor(nome, idade, tipo){
+                this.nome = nome
+                this.idade = idade
+                this.tipo = tipo
+            }
+
+            atacar() {
+
+                if (this.tipo == 'mago') {
+                    msg.innerHTML = `O ${this.nome} é um ${this.tipo} e atacou usando magia`;
+                } else if (this.tipo == 'guerreiro') {
+                    msg.innerHTML = `O ${this.nome} é um ${this.tipo} e atacou usando uma espada`;
+                } else if (this.tipo == 'monge') {
+                    msg.innerHTML = `O ${this.nome} é um ${this.tipo} e atacou usando artes marciais`;
+                } else if (this.tipo == 'ninja') {
+                    msg.innerHTML = `O ${this.nome} é um ${this.tipo} e atacou usando uma shuriken`;
+                } else {
+                    msg.innerHTML = `Não identifiquei o tipo do seu herói.`
+                }
+
+                }
+        }
+
+        const hero1 = new hero('Pedro', '23', 'ninja')
+        hero1.atacar()
+        
+        
+    </script>
+</body>
+</html>
