@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            background: rgb(255, 255, 255);
+            color: rgb(66, 66, 66);
+            border-radius: 30px;
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .principal {
+            width: 80%;
+            height: auto;
+            padding: 10px;
+        }
+
+        .menu {
+            width: 20%;
+        }
+
+        .menu ul {
+            padding: 0;
+        }
+
+        .menu li {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .menu li > a {
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            color: rgb(55, 55, 55);
+        }
+
+        li > a:hover {
+            background-color: rgb(32, 32, 77);
+            color: white;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0);
+            background-position: center;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 80px;
+        }
+
+        article h1{
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        article p{
+            color: rgb(66, 66, 66);
+            text-align: justify;
+        }
+
+        article h5{
+            color: rgb(37, 37, 37);
+            font-size: 16px;
+        }
+
+        footer {
+            display: flex;
+            margin-top: 50px;
+            width: 100%;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        figure {
+            margin-top: 0;
+        }
+
+        .material-symbols-outlined {
+            color: white;
+        }
+        hr {
+            width: 100%;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(235, 235, 235);
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: rgb(32, 32, 77);
+            cursor: pointer;
+        }
+        .material-symbols-outlined {
+            color: gray;
+        }
+
+        .seta:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header><img src="https://raiosom.com.br/images/logo.png" alt="imagem" width="400px"></header>
+       <div class="container">
+            <div class="menu">
+                <ul>
+                    <li><a href="paginaPrincipal.html">Página principal</a></li>
+                    <li><a href="sobre.html">Sobre a Clínica</a></li>
+                    <li><a href="horario.html">Horário de Atendimento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="/HTML5/indexHtml.html" class="seta">
+                        <span class="material-symbols-outlined">
+                        keyboard_backspace </span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="principal">
+                <article>
+                    <h1>Sobre a Clínica</h1>
+                    <p>O Centro Clínico Raio Som, está constantemente em busca de avanços na área de Diagnóstico por Imagem oferecendo qualidade em todos os serviços.</p>
+                    <p>Contamos com os serviços de Ressonância Magnética, Tomografia Computadorizada, Ultrassonografia geral, Densitometria Óssea, Raios X Digital e Mamografia a somos certificados com o <i>Selo de Qualidade PADI - Programa de Acreditação em Diagnóstico por Imagem - do Colégio Brasileiro de Radiologia - CBR</i> e pioneiros nos municípios de Gravataí e Cachoeirinha.</p>
+                    <p>A clínica Raio Som oferece aos seus pacientes e médicos solicitantes, a consulta de seus laudos e imagens pela internet, através do sistema Animati PACS.
+                    </p>
+                    <p>As instalações oferecem conforto e privacidade para pacientes, médicos e acompanhantes.
+                    </p>
+                    <p>Toda concepção do projeto prioriza a acessibilidade, a comodidade e a segurança. As salas são amplas e climatizadas, com recepções individualizadas para cada tipo de exame.
+                    </p>
+
+                    <h5>Missão</h5>
+                    <p>Oferecer soluções em saúde através do diagnóstico por imagem, prestando assistência e promovendo a qualidade de vida de nossos clientes, buscando superar suas expectativas através da competência profissional, da tecnologia e do atendimento personalizado.</p>
+
+                    <h5>Visão</h5>
+                    <p>Ser a marca de referência em diagnóstico por imagem, através da prestação de serviços de excelência em um ambiente diferenciado, com atendimento personalizado e exclusivo. Promover o crescimento pessoal e profissional da equipe técnica e pessoal administrativo. Buscar a constante inovação e modernização tecnológica.</p>
+
+                    <h5>Valores</h5>
+                    <p>Satisfação dos clientes. Competência, comprometimento e valorização da equipe técnica e do pessoal administrativo. Inovação tecnológica. Ética nas relações com clientes, colaboradores e comunidade.
+                    </p>
+                </article>
+            </div>
+       </div>
+       <hr>
+       <footer>
+        <div class="menu">
+            <ul>
+                <li><a href="paginaPrincipal.html">Página principal</a></li>
+                <li><a href="sobre.html">Sobre a Clínica</a></li>
+                <li><a href="horario.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <figure>
+            <img src="https://raiosom.com.br/images/logo.png" alt="raio som" width="300px">
+        </figure>
+        <input type="email" placeholder="Insira seu e-mail">
+        <button>Enviar</button>
+        </footer>
+    </div>
+</body>
+</html>
