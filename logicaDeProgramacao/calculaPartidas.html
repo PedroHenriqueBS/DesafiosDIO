@@ -12,17 +12,18 @@
             flex-direction: column;
             background: rgb(16, 130, 79);
             border-radius: 30px;
-            width: 250px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             margin: auto;
             margin-top: 100px;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
         button {
-            margin-bottom: 20px;
-            padding: 10px;
+            margin: 10px;
+            padding: 5px 10px;
             border-radius: 10px;
             border: none;
             -webkit-box-shadow: inset -4px -3px 7px -1px rgba(0,0,0,0.75);
@@ -39,6 +40,17 @@
             color: white;
             font-family: Arial, Helvetica, sans-serif
         }
+        
+        input {
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            margin: 3px;
+        }
+
+        span {
+            width: 200px;
+        }
 
         .material-symbols-outlined {
             color: white;
@@ -46,18 +58,47 @@
     </style>
 </head>
 <body>
-    <br>
     <div class="main">
-        <h3>Classificador de XP</h3>
-        <button onclick="clickHero()">Inserir um novo Herói</button>
+        <h3>Calculadora de Partidas Rankeadas</h3>
+        <input type="number" placeholder="Vitórias" id="vit">
+        <input type="number" placeholder="Derrotas" id="der">
+        <button onclick="rankeadas(vit,der)">Verificar</button>
+        <span id="msg"></span>
         <a href="indexProg.html"><span class="material-symbols-outlined">
             keyboard_backspace
             </span></a>
     </div>
 
     <script>
+   
 
+    function rankeadas (){
+
+        let vit = document.getElementById('vit').value
+        let der = document.getElementById('der').value 
+        let msg = document.getElementById('msg')
+
+        let saldoDeVitorias; 
+        saldoDeVitorias = vit - der
+
+        if (saldoDeVitorias < 10){
+            msg.innerHTML = (`O Herói tem saldo de ${saldoDeVitorias} e está no nível de Ferro`)
+        } else if (saldoDeVitorias > 10 && saldoDeVitorias <= 20) {
+            msg.innerHTML = (`O Herói tem saldo de ${saldoDeVitorias} e está no nível de Bronze`)
+        } else if (saldoDeVitorias > 20 && saldoDeVitorias <= 50) {
+            msg.innerHTML = (`O Herói tem saldo de ${saldoDeVitorias} e está no nível de Prata`)
+        } else if (saldoDeVitorias > 50 && saldoDeVitorias <= 80) {
+            msg.innerHTML = (`O Herói tem saldo de ${saldoDeVitorias} e está no nível de Ouro`)
+        } else if (saldoDeVitorias > 80 && saldoDeVitorias <= 90){
+            msg.innerHTML = (`O Herói tem saldo de ${saldoDeVitorias} e está no nível de Diamante`)
+        } else if (saldoDeVitorias > 90 && saldoDeVitorias <= 100) {
+            msg.innerHTML = (`O Herói tem saldo de ${saldoDeVitorias} e está no nível de Lendário`)
+        } else if (saldoDeVitorias > 100) {
+            msg.innerHTML = (`O Herói tem saldo de ${saldoDeVitorias} e está no nível de Imortal`)
+        }
+           
         
+    }       
         
     </script>
 </body>
