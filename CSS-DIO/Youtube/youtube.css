@@ -4,11 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 body {
     background: #F9F9F9;
+}
+
+main {
+    display: flex;
+    width: 100vw;
 }
 
 .header {
@@ -78,13 +84,19 @@ body {
 .content {
     display: flex;
     padding-top: 26px;
+    width: 100%;
 }
 
 .lado01 {
-    display: inline-flex;
+    display: flex;
     width: 1040px;
     flex-direction: column;
     padding-left: 84px;
+}
+
+iframe{
+    width: 952px;
+    height: 537px;
 }
 
 .infs {
@@ -155,6 +167,7 @@ body {
     padding-left: 15px;
     height: 90px;
     cursor: pointer;
+    flex: 0 1 auto;
 }
 
 .aside h3 {
