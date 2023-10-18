@@ -153,6 +153,7 @@ main {
     flex-direction: column;
     width: 250px;
     height: auto;
+    cursor: pointer;
 }
 
 .main-thumb {
