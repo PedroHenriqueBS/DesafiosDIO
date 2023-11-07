@@ -6,10 +6,17 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/responsivo.css">
+    <link rel="stylesheet" href="assets/css/acordeon.css">
+    <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
     <title>Portfólio</title>
 </head>
 <body>
-    <div class="main">
+    <main class="main">
+
+        <!-- HEADER -->
         <header class="header">
             <img src="assets/img/Sem título.png" alt="Foto de Pedro" class="photo">
             <h1 class="title">Olá, <br>
@@ -21,6 +28,101 @@
                 <p>pedrohenriqueb366@gmail.com</p>
             </div>
         </header>
-    </div>
+
+        <!-- Skills -->
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <span class="title">Skills</span>
+            </button>
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas:</h3>
+                        <ul>
+                            <li>
+                                <img src="assets/img/languagens/html-logo.svg" alt="Html" title="html">
+                                <img src="assets/img/languagens/css-logo.svg" alt="css" title="css">
+                                <img src="assets/img/languagens/js-logo.svg" alt="javascript" title="javascript">
+                                <img src="assets/img/languagens/angular-logo.svg" alt="angular" title="angular">
+                                <img src="assets/img/languagens/github-logo.svg" alt="github" title="github">
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>Pessoal:</h3>
+                        <ul>
+                            <li>Liderança</li>
+                            <li>Organização</li>
+                            <li>Flexibilidade</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Proatividade</li>
+                            <li>Liderança</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- IDIOMAS -->
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <span class="title">Idiomas</span>
+            </button>
+            <div class="content">
+                <ul class="languages">
+                    <li>Português</li>
+                    <li>Inglês</li>
+                    <li>Espanhol</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- POTFÓLIO -->
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <span class="title">Portfólio</span>
+            </button>
+            <div class="content">
+                <ul class="portfolio">
+                    <li>
+                        <span class="title">Criando um APP</span>
+                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title">Criando um APP</span>
+                        <a href="www.google.com.br">www.google.com.br</a>
+                    </li>
+                    <li>
+                        <span class="title">Criando um APP</span>
+                        <a href="www.google.com.br">www.google.com.br</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experiência Profissional -->
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <span class="title">Experiência Profissional</span>
+            </button>
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <span class="title">Front-end Developer / Dio.</span>
+                        <span class="data">Jan 2020 - Current</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor debitis, eum sequi quasi atque! Hic ea accusantium nihil, reiciendis minus quia optio neque cumque iure non vitae odit beatae!</p>
+                    </li>
+                    <li>
+                        <span class="title">Front-end Developer / Dio.</span>
+                        <span class="data">Jan 2020 - Current</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor debitis, eum sequi quasi atque! Hic ea accusantium nihil, reiciendis minus quia optio neque cumque iure non vitae odit beatae!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <script src="assets/js/acordeon.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+.languages {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0;
+    padding: 1.5rem 0;
+    list-style: none;
+}
+
+.languages li {
+    padding-right: 1rem;
+    font-weight: 700;
+}
+
+.languages li::before{
+    content: '✔';
+    font-size: .8rem;
+    padding-right: .5rem;
+}

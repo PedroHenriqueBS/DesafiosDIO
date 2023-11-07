@@ -1,0 +1,34 @@
+.experience {
+    margin: 0;
+    padding: 1.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience li {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    margin-bottom: 1.3rem;
+}
+
+.experience li .title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.experience li .data{
+    display: flex;
+    align-items: center;
+}
+
+.experience li .data::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url('../img/calendario.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .5rem;
+}

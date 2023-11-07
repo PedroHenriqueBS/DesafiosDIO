@@ -1,0 +1,46 @@
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+.skills h3 {
+    margin: 1.5rem 0;
+}
+
+.skills .tools{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.skills .tools ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.skills .tools ul li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.skills .tools img {
+    max-width: 50px;
+    margin: .5rem;
+}
+
+.skills .personal {
+    max-width: 450px;
+}
+
+.skills .personal ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skills .personal ul li {
+    margin: .3rem 1.5rem;
+}

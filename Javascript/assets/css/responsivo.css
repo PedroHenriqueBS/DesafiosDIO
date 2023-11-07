@@ -1,5 +1,32 @@
 @media screen and (min-width: 640px) {
+   .main {
+      max-width: 1024px;
+      margin: 20px auto 0;
+   }
+   
    .header {
     flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "photo title"
+    "photo info";
    }
+
+   .header .photo {
+      grid-area: photo;
+      margin: auto;
+      
+   }
+
+   .header .title {
+      grid-area: title;
+      text-align: start;
+   }
+
+   .header__info {
+      grid-area: info;
+   }
+
 }
