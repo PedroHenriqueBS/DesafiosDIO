@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header .title {
+    font-family: 'neue-machine-regular', sans-serif;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.header__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header__info p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: .8rem;
+}
+
+.header__info p::before {
+    content: '';
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.header__info p:nth-child(1)::before{
+    background-image: url('../img/icons/user.svg');
+}
+
+.header__info p:nth-child(2)::before{
+    background-image: url('../img/icons/local.svg');
+}
+
+.header__info p:nth-child(3)::before{
+    background-image: url('../img/icons/whats.svg');
+}
+
+.header__info p:nth-child(4)::before{
+    background-image: url('../img/icons/email.svg');
+}
+
