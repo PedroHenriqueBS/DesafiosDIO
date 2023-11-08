@@ -1,7 +1,7 @@
 @media screen and (min-width: 640px) {
    .main {
       max-width: 1024px;
-      margin: 20px auto 0;
+      margin: 20px auto 20px;
    }
    
    .header {
@@ -27,6 +27,19 @@
 
    .header__info {
       grid-area: info;
+   }
+
+}
+
+@media screen and (max-width: 555px){
+
+   .portfolio li a {
+      font-size: .6rem;
+   }
+
+   .portfolio li .title {
+      display: flex;
+      font-size: .7rem;
    }
 
 }

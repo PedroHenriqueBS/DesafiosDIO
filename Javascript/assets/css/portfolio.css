@@ -15,9 +15,7 @@
     margin: 1rem 0;
 }
 
-.portfolio li .title{
-    display: flex;
-    align-items: center;
+.portfolio .title{
     font-weight: 700;
     font-size: 1.2rem;
 }

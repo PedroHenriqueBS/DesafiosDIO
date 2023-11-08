@@ -8,7 +8,7 @@
 .experience li {
     display: flex;
     flex-direction: column;
-    gap: .7rem;
+    gap: 1.3rem;
     margin-bottom: 1.3rem;
 }
 
