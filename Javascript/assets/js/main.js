@@ -35,6 +35,11 @@ function updateIdiomas(profileData){
     idiomas.innerHTML = profileData.languages.map(languages => `<li>${languages}</li>`).join('');
 }
 
+function updateJob(profileData){
+    const jobName = document.getElementById('profile.jobName');
+    jobName.innerHTML = profileData.professionalExperience.name.map(jobName => `${jobName}`).join('');
+}
+
 
 (async () => {
     const profileData = await fetchProfileData()
