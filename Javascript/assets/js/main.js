@@ -35,12 +35,12 @@ function updateIdiomas(profileData){
     idiomas.innerHTML = profileData.languages.map(languages => `<li>${languages}</li>`).join('');
 }
 
-function updateJob(profileData){
-    const job = document.getElementById('profile.job');
-    job.innerHTML = profileData.professionalExperience.map(job => {
+function updateExperience(profileData){
+    const profileExperience = document.getElementById('profile.experience');
+    profileExperience.innerHTML = profileData.professionalExperience.map(job => {
         return `
             <li>
-                <h3 class="title">${job.name}h3>
+                <h3 class="title">${job.name}</h3>
                 <p class="data">${job.period}</p>
                 <p>${job.description}</p>
             </li>
@@ -55,5 +55,5 @@ function updateJob(profileData){
     updateSoftSkills(profileData);
     updateHardSkills(profileData);
     updateIdiomas(profileData);
-    updateJob(profileData);
+    updateExperience(profileData);
 })();
